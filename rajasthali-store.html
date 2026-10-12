@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rajasthali Handicrafts</title>
+<style>
+:root{--bg:#fbf6ee;--card:#fff;--tx:#2b1d16;--mu:#7a675c;--ac:#b3261e;--ac2:#d99a2b;--bd:#eadfce;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a1310;--card:#251b16;--tx:#f5ece2;--mu:#b5a294;--ac:#e0584d;--ac2:#e8b04a;--bd:#3a2c24}}
+:root[data-theme="dark"]{--bg:#1a1310;--card:#251b16;--tx:#f5ece2;--mu:#b5a294;--ac:#e0584d;--ac2:#e8b04a;--bd:#3a2c24}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:Georgia,serif;line-height:1.5}
+button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer}
+.top{background:var(--ac);color:#fff;text-align:center;font:13px system-ui;padding:6px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--bd);display:flex;align-items:center;gap:12px;padding:10px 16px;flex-wrap:wrap}
+.logo{font-size:22px;font-weight:700;color:var(--ac);text-decoration:none}.logo small{display:block;font-size:10px;color:var(--mu);letter-spacing:3px;font-weight:400}
+nav{display:flex;gap:16px;flex:1;overflow-x:auto;font:14px system-ui}nav a{color:var(--tx);text-decoration:none;white-space:nowrap;padding:4px 0;border-bottom:2px solid transparent}nav a.on,nav a:hover{color:var(--ac);border-color:var(--ac)}
+.ib{background:none;border:0;font-size:20px;position:relative;padding:4px 6px}.bd{position:absolute;top:-4px;right:-4px;background:var(--ac);color:#fff;border-radius:10px;font:11px system-ui;padding:1px 5px}
+.page{display:none;animation:f .25s}.page.on{display:block}@keyframes f{from{opacity:0}to{opacity:1}}
+.hero{padding:60px 20px;text-align:center;background:linear-gradient(135deg,#7a1f1a,#b3261e 50%,#d99a2b);color:#fff}
+.hero h1{font-size:clamp(28px,6vw,46px);margin:0 0 8px}.hero p{max-width:520px;margin:0 auto 20px}
+.btn{background:var(--ac);color:#fff;border:0;border-radius:6px;padding:10px 20px;font-family:system-ui}.btn.o{background:none;border:1px solid var(--ac);color:var(--ac)}.hero .btn{background:#fff;color:#7a1f1a;font-weight:600}
+section,.wrap{padding:30px 16px;max-width:1150px;margin:auto}h2{margin:0 0 14px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.tile{border-radius:10px;padding:26px 10px;text-align:center;color:#fff;border:0;font:600 16px Georgia,serif}.tile small{display:block;font:12px system-ui;opacity:.9}
+.bar{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0;font:14px system-ui;align-items:center}
+.bar select,.bar input{padding:7px;border:1px solid var(--bd);border-radius:6px;background:var(--card)}
+.chips button{border:1px solid var(--bd);background:var(--card);border-radius:20px;padding:5px 14px;font:13px system-ui}.chips button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+.pc{background:var(--card);border:1px solid var(--bd);border-radius:10px;overflow:hidden;position:relative}
+.im{height:190px;display:flex;align-items:center;justify-content:center;font-size:64px;cursor:pointer}
+.pi{padding:12px;font-family:system-ui}.pi h3{font:600 15px Georgia,serif;margin:0 0 4px}.pr{font-weight:700}.pr s{color:var(--mu);font-weight:400;margin-left:6px;font-size:13px}
+.tag{position:absolute;top:8px;left:8px;background:var(--ac2);color:#222;font:600 11px system-ui;padding:2px 8px;border-radius:10px}
+.wh{position:absolute;top:6px;right:8px;background:var(--card);border-radius:50%;border:0;width:32px;height:32px}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:40;display:none;align-items:center;justify-content:center;padding:16px}.ov.s{display:flex}
+.md{background:var(--card);border-radius:12px;max-width:540px;width:100%;max-height:90vh;overflow:auto;padding:20px;font-family:system-ui;position:relative}.md .im{height:170px;border-radius:8px;cursor:default}
+.x{position:absolute;top:8px;right:12px;font-size:22px;background:none;border:0}
+.dr{position:fixed;top:0;right:0;bottom:0;width:min(400px,100%);background:var(--card);z-index:50;transform:translateX(100%);transition:.25s;display:flex;flex-direction:column;font-family:system-ui;padding:16px;padding-top:calc(16px + env(safe-area-inset-top,0px));padding-bottom:calc(16px + env(safe-area-inset-bottom,0px))}.dr.s{transform:none}
+.ci{display:flex;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--bd);font-size:14px}.ci .t{width:48px;height:48px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:26px}.ci .f{flex:1}
+.q button{width:26px;height:26px;border:1px solid var(--bd);background:none;border-radius:4px}
+.row{display:flex;justify-content:space-between;margin:4px 0}
+.f{width:100%;padding:9px;margin:4px 0 8px;border:1px solid var(--bd);border-radius:6px;background:var(--bg)}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;text-align:center;font:14px system-ui}.feat div,.rv div{padding:14px;background:var(--card);border-radius:10px;border:1px solid var(--bd)}
+.rv{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;font:14px system-ui}
+details{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:10px 14px;margin:8px 0;font-family:system-ui}summary{cursor:pointer;font-weight:600}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+footer{background:#2b1d16;color:#e8dccd;padding:30px 16px;font:14px system-ui}footer .in{max-width:1150px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}footer a{color:#e8dccd;display:block;text-decoration:none;margin:4px 0}
+.nl{display:flex;gap:6px}.nl input{flex:1;padding:8px;border-radius:6px;border:0;min-width:0}
+#toast{position:fixed;bottom:calc(20px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);background:#222;color:#fff;padding:10px 18px;border-radius:20px;font:14px system-ui;z-index:99;display:none}
+</style></head><body>
+<div class="top" id="topbar"></div>
+<header>
+<a class="logo" href="#/home">Rajasthali<small>HANDICRAFTS</small></a>
+<nav id="nav"></nav>
+<button class="ib" title="Account" onclick="openM(MD.acc())">👤</button>
+<button class="ib" title="Wishlist" onclick="go('wishlist')">♡<span class="bd" id="wc">0</span></button>
+<button class="ib" title="Cart" onclick="openCart()">🛍<span class="bd" id="cc">0</span></button>
+<button class="ib" title="Theme" onclick="theme()">◐</button>
+</header>
+
+<!-- ============ PAGES: each <div class="page" id="p-NAME"> is one section; add new ones and register in PAGES below ============ -->
+<div class="page" id="p-home">
+ <div class="hero"><h1>Sarees Woven in Rajasthan</h1><p>Bandhani, Kota Doria, silk and bridal sarees — handcrafted by artisans of Jaipur, Sanganer and Bagru.</p><button class="btn" onclick="shopBy('type','All')">Shop Sarees</button></div>
+ <section><h2>Shop by Fabric & Style</h2><div class="tiles" id="typeTiles"></div></section>
+ <section><h2>Shop by Occasion</h2><div class="tiles" id="colTiles"></div></section>
+ <section><h2>Bestsellers</h2><div class="grid" id="bestGrid"></div></section>
+ <section><div class="feat"><div>🚚<br><b>Free Shipping</b><br><span id="fsText"></span></div><div>↩️<br><b>7-Day Returns</b><br>Easy exchange</div><div>🧵<br><b>Authentic Craft</b><br>Direct from artisans</div><div>🔒<br><b>Secure Payment</b><br>UPI, Cards, COD</div></div></section>
+ <section><h2>What Customers Say</h2><div class="rv"><div>★★★★★<br>“The bandhani saree is stunning, colours exactly as shown.”<br><b>— Priya S., Delhi</b></div><div>★★★★★<br>“Beautiful packaging and fast delivery. Perfect for my wedding.”<br><b>— Anjali K., Mumbai</b></div><div>★★★★☆<br>“Lovely Kota Doria, very light to wear all day.”<br><b>— Neha R., Pune</b></div></div></section>
+</div>
+
+<div class="page" id="p-shop"><div class="wrap"><h2 id="st">All Sarees</h2>
+ <div class="chips bar" id="chips"></div>
+ <div class="bar"><input id="q" placeholder="Search sarees…" oninput="renderShop()"><select id="col" onchange="S.col=this.value;renderShop()"></select><select id="pf" onchange="renderShop()"><option value="0">Any price</option><option value="2000">Under ₹2000</option><option value="4000">Under ₹4000</option><option value="99999">₹4000+</option></select><select id="sort" onchange="renderShop()"><option value="">Featured</option><option value="lo">Price: Low to High</option><option value="hi">Price: High to Low</option><option value="rt">Top Rated</option></select><span id="rc"></span></div>
+ <div class="grid" id="grid"></div></div></div>
+
+<div class="page" id="p-wishlist"><div class="wrap"><h2>My Wishlist</h2><div class="grid" id="wgrid"></div></div></div>
+
+<div class="page" id="p-about"><div class="wrap two"><div><h2>Our Story</h2><p>Rajasthali Handicrafts brings the textile heritage of Rajasthan to your wardrobe. Every saree is made by skilled artisan families using traditional techniques — block printing, bandhani tie-dye, Kota Doria weaving and zari work — passed down through generations.</p><p>Buying from us supports fair-wage craft livelihoods. We begin with sarees and will soon expand to kurtas and more.</p></div><div class="feat" style="align-content:start"><div><b>Block Print</b><br>Hand-stamped in Bagru</div><div><b>Bandhani</b><br>Tie-dyed in Jaipur</div><div><b>Kota Doria</b><br>Woven in Kota</div></div></div></div>
+
+<div class="page" id="p-faq"><div class="wrap"><h2>Frequently Asked Questions</h2>
+<details><summary>Do sarees come with a blouse piece?</summary><p>Yes, most sarees include an unstitched blouse piece. Check the product description.</p></details>
+<details><summary>How long does delivery take?</summary><p>3–7 business days across India.</p></details>
+<details><summary>What is your return policy?</summary><p>Returns accepted within 7 days of delivery, unused with tags intact.</p></details>
+<details><summary>How should I care for my saree?</summary><p>Dry clean for silk and zari work. Gentle cold hand wash for cotton and block prints. Do not wring or bleach.</p></details>
+<details><summary>Do you offer Cash on Delivery?</summary><p>Yes, COD is available on most PIN codes.</p></details></div></div>
+
+<div class="page" id="p-contact"><div class="wrap two"><div><h2>Contact Us</h2><p id="ctInfo"></p><h3>Track your order</h3><input class="f" id="to" placeholder="Order ID e.g. RJ123456"><button class="btn" onclick="var v=$('to').value;$('tr').textContent=v?'Order '+v+': packed, dispatching soon.':'Enter an order ID'">Track</button><p id="tr"></p></div>
+<div><h3>Send a message</h3><input class="f" id="mn" placeholder="Your name"><input class="f" id="me" placeholder="Email"><textarea class="f" id="mm" rows="4" placeholder="Message"></textarea><button class="btn" onclick="if($('mn').value&&/\S+@\S+\.\S+/.test($('me').value)&&$('mm').value){toast('Message sent! We will reply soon.');$('mm').value=''}else toast('Fill name, valid email and message')">Send</button></div></div></div>
+
+<footer><div class="in"><div><b id="fb"></b><br><span id="fa"></span></div>
+<div><b>Quick Links</b><a href="#/shop">Shop Sarees</a><a href="#/about">Our Story</a><a href="#/faq">FAQ</a><a href="#/contact">Contact & Track Order</a></div>
+<div><b>Newsletter</b><p>Get offers on new arrivals.</p><div class="nl"><input id="nm" placeholder="Your email"><button class="btn" onclick="if(/\S+@\S+\.\S+/.test($('nm').value)){toast('Subscribed!');$('nm').value=''}else toast('Enter a valid email')">Join</button></div></div></div></footer>
+
+<div class="ov" id="ov"><div class="md" id="md"></div></div><div class="dr" id="dr"></div><div id="toast"></div>
+<script>
+/* ===== 1. SETTINGS: change brand, contact, coupon, shipping here ===== */
+var CFG={brand:'Rajasthali Handicrafts',email:'care@rajasthali.example',phone:'+91 00000 00000',address:'Jaipur, Rajasthan, India',coupon:'RAJ10',couponPct:10,freeShipAbove:1999,shipFee:99,fallPico:149};
+/* ===== 2. PAGES / MENU: add a new page here + a matching <div class="page" id="p-NAME"> ===== */
+var PAGES=[['home','Home'],['shop','Shop Sarees'],['about','Our Story'],['faq','FAQ'],['contact','Contact']];
+/* ===== 3. SAREE TYPES & OCCASIONS (used for filters/tiles). Later add 'Kurta' as a new product category ===== */
+var TYPES=[['Silk','#7a1f1a','#c2185b'],['Cotton','#00695c','#4db6ac'],['Bandhani','#e65100','#f9a825'],['Designer','#4a148c','#ab47bc']];
+var OCC=[['Wedding','#b71c1c','#ffb300'],['Festive','#ad1457','#ff8a65'],['Daily Wear','#1565c0','#80cbc4']];
+/* ===== 4. PRODUCTS: copy a line to add a saree. g = gradient colours, tag optional ===== */
+var P=[
+{id:1,n:'Bandhani Silk Saree',t:'Bandhani',o2:'Festive',p:3499,o:4499,r:4.8,g:['#c2185b','#f57c00'],tag:'Bestseller',d:'Pure silk with hand-tied bandhani dots. Blouse piece included.'},
+{id:2,n:'Kota Doria Cotton Saree',t:'Cotton',o2:'Daily Wear',p:1899,o:2399,r:4.5,g:['#00897b','#80cbc4'],d:'Featherlight Kota Doria weave with square checks. Blouse piece included.'},
+{id:3,n:'Banarasi Silk Saree',t:'Silk',o2:'Wedding',p:5999,o:7499,r:4.9,g:['#880e4f','#ffd54f'],tag:'Bridal',d:'Rich zari border and brocade pallu. Blouse piece included.'},
+{id:4,n:'Block Print Cotton Saree',t:'Cotton',o2:'Daily Wear',p:1299,o:1699,r:4.4,g:['#1565c0','#90caf9'],tag:'New',d:'Hand block printed in Bagru with natural dyes.'},
+{id:5,n:'Leheriya Georgette Saree',t:'Designer',o2:'Festive',p:2799,o:3499,r:4.6,g:['#e65100','#ffe082'],d:'Wave-pattern leheriya on flowy georgette.'},
+{id:6,n:'Gota Patti Designer Saree',t:'Designer',o2:'Wedding',p:6499,o:8499,r:4.8,g:['#ad1457','#ffcc80'],tag:'Bridal',d:'Hand-applied gota patti work on chiffon.'},
+{id:7,n:'Mysore-Style Silk Saree',t:'Silk',o2:'Festive',p:4299,o:5299,r:4.7,g:['#2e7d32','#ffca28'],d:'Soft crepe silk with golden border.'},
+{id:8,n:'Bandhani Georgette Saree',t:'Bandhani',o2:'Wedding',p:3199,o:3999,r:4.5,g:['#6a1b9a','#f06292'],d:'Classic Jaipur bandhani on light georgette.'},
+{id:9,n:'Ajrakh Cotton Saree',t:'Cotton',o2:'Daily Wear',p:1599,o:1999,r:4.3,g:['#0d47a1','#b71c1c'],d:'Deep indigo and madder-red ajrakh print.'},
+{id:10,n:'Zari Border Tussar Saree',t:'Silk',o2:'Festive',p:3899,o:4799,r:4.6,g:['#8d6e63','#ffe082'],tag:'New',d:'Natural tussar silk with woven zari border.'}];
+var S={type:'All',col:'All'},cart=[],wish=[],coupon='',qty=1,addon=false;
+try{cart=JSON.parse(localStorage.getItem('rj_cart')||'[]');wish=JSON.parse(localStorage.getItem('rj_wish')||'[]')}catch(e){}
+function save(){try{localStorage.setItem('rj_cart',JSON.stringify(cart));localStorage.setItem('rj_wish',JSON.stringify(wish))}catch(e){}}
+function $(i){return document.getElementById(i)}
+function inr(n){return '\u20B9'+n.toLocaleString('en-IN')}
+function toast(m){var t=$('toast');t.textContent=m;t.style.display='block';clearTimeout(window._t);window._t=setTimeout(function(){t.style.display='none'},2300)}
+function theme(){var r=document.documentElement,d=r.getAttribute('data-theme')==='dark'||(!r.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme:dark)').matches);r.setAttribute('data-theme',d?'light':'dark')}
+function find(id){return P.find(function(a){return a.id===id})}
+/* ---- navigation ---- */
+function go(p){location.hash='#/'+p}
+function route(){var p=(location.hash.replace('#/','')||'home');if(!$('p-'+p))p='home';
+[].forEach.call(document.querySelectorAll('.page'),function(e){e.classList.toggle('on',e.id==='p-'+p)});
+[].forEach.call($('nav').children,function(a){a.classList.toggle('on',a.dataset.p===p)});
+if(p==='shop')renderShop();if(p==='wishlist')renderWish();window.scrollTo(0,0)}
+window.onhashchange=route;
+function shopBy(k,v){S={type:'All',col:'All'};S[k]=v;go('shop');if(location.hash==='#/shop')renderShop()}
+/* ---- cards ---- */
+function card(x){return '<div class="pc">'+(x.tag?'<span class="tag">'+x.tag+'</span>':'')+'<button class="wh" onclick="tw('+x.id+')">'+(wish.indexOf(x.id)>-1?'\u2764\uFE0F':'\u2661')+'</button><div class="im" style="background:linear-gradient(135deg,'+x.g[0]+','+x.g[1]+')" onclick="openP('+x.id+')">\uD83E\uDD7B</div><div class="pi"><h3>'+x.n+'</h3><div>\u2605 '+x.r+' \u00B7 '+x.t+'</div><div class="pr">'+inr(x.p)+'<s>'+inr(x.o)+'</s></div><button class="btn" style="width:100%;margin-top:8px" onclick="openP('+x.id+')">View & Add</button></div></div>'}
+function renderShop(){
+$('chips').innerHTML=['All'].concat(TYPES.map(function(t){return t[0]})).map(function(t){return '<button class="'+(S.type===t?'on':'')+'" onclick="S.type=\''+t+'\';renderShop()">'+t+'</button>'}).join('');
+$('col').innerHTML='<option value="All">All occasions</option>'+OCC.map(function(o){return '<option'+(S.col===o[0]?' selected':'')+'>'+o[0]+'</option>'}).join('');
+var q=$('q').value.toLowerCase(),pf=+$('pf').value,s=$('sort').value;
+var l=P.filter(function(x){return(S.type==='All'||x.t===S.type)&&(S.col==='All'||x.o2===S.col)&&x.n.toLowerCase().indexOf(q)>-1&&(pf===0||(pf===99999?x.p>=4000:x.p<pf))});
+if(s==='lo')l.sort(function(a,b){return a.p-b.p});if(s==='hi')l.sort(function(a,b){return b.p-a.p});if(s==='rt')l.sort(function(a,b){return b.r-a.r});
+$('st').textContent=(S.type==='All'?'All':S.type)+' Sarees'+(S.col!=='All'?' \u00B7 '+S.col:'');$('rc').textContent=l.length+' sarees';
+$('grid').innerHTML=l.length?l.map(card).join(''):'<p>No sarees found.</p>';badges()}
+function renderWish(){var l=P.filter(function(x){return wish.indexOf(x.id)>-1});$('wgrid').innerHTML=l.length?l.map(card).join(''):'<p>Your wishlist is empty. <a href="#/shop">Browse sarees</a></p>'}
+function badges(){$('cc').textContent=cart.reduce(function(a,b){return a+b.q},0);$('wc').textContent=wish.length}
+function tw(id){var i=wish.indexOf(id);if(i>-1)wish.splice(i,1);else{wish.push(id);toast('Added to wishlist')}save();badges();var p=location.hash;if(p==='#/shop')renderShop();else if(p==='#/wishlist')renderWish();else renderHome()}
+/* ---- modal / product ---- */
+function openM(h){$('md').innerHTML='<button class="x" onclick="closeM()">\u00D7</button>'+h;$('ov').classList.add('s')}
+function closeM(){$('ov').classList.remove('s')}
+$('ov').onclick=function(e){if(e.target===this)closeM()};
+var MD={acc:function(){return '<h3>Login / Sign up</h3><input class="f" placeholder="Email or mobile"><input class="f" type="password" placeholder="Password"><button class="btn" onclick="closeM();toast(\'Welcome back! (demo login)\')">Continue</button>'}};
+function openP(id){var x=find(id);qty=1;addon=false;
+openM('<div class="im" style="background:linear-gradient(135deg,'+x.g[0]+','+x.g[1]+')">\uD83E\uDD7B</div><h2 style="margin:12px 0 4px">'+x.n+'</h2><div>\u2605 '+x.r+' \u00B7 '+x.t+' \u00B7 '+x.o2+'</div><div class="pr" style="font-size:20px;margin:6px 0">'+inr(x.p)+' <s>'+inr(x.o)+'</s> <span style="color:var(--ac)">'+Math.round(100-x.p/x.o*100)+'% off</span></div><p style="color:var(--mu)">'+x.d+' Length 5.5 m + 0.8 m blouse piece.</p><label><input type="checkbox" onchange="addon=this.checked"> Add fall & pico stitching (+'+inr(CFG.fallPico)+')</label><br><br><b>Qty</b> <span class="q"><button onclick="qty=Math.max(1,qty-1);$(\'qv\').textContent=qty">\u2212</button> <span id="qv">1</span> <button onclick="qty++;$(\'qv\').textContent=qty">+</button></span><div style="display:flex;gap:8px;margin-top:14px"><button class="btn" style="flex:1" onclick="add('+id+')">Add to Cart</button><button class="btn o" onclick="tw('+id+');closeM()">\u2661 Wishlist</button></div><div style="margin-top:12px;font-size:13px;color:var(--mu)">Check delivery: <input id="pin" placeholder="PIN code" style="width:110px;padding:4px"> <button class="btn o" style="padding:3px 10px" onclick="var v=$(\'pin\').value;$(\'pd\').textContent=/^\\d{6}$/.test(v)?\'Delivery in 3\u20137 days \u00B7 COD available\':\'Enter valid 6-digit PIN\'">Check</button><div id="pd"></div></div>')}
+/* ---- cart ---- */
+function add(id){var k=cart.find(function(c){return c.id===id&&c.a===addon});if(k)k.q+=qty;else cart.push({id:id,a:addon,q:qty});save();badges();closeM();openCart()}
+function totals(){var s=cart.reduce(function(a,c){return a+(find(c.id).p+(c.a?CFG.fallPico:0))*c.q},0),d=coupon===CFG.coupon?Math.round(s*CFG.couponPct/100):0,sh=(s-d>=CFG.freeShipAbove||!s)?0:CFG.shipFee;return{s:s,d:d,sh:sh,t:s-d+sh}}
+function openCart(){var d=$('dr');d.classList.add('s');var T=totals();
+d.innerHTML='<div class="row"><b style="font-size:18px">Your Cart</b><button class="x" style="position:static" onclick="$(\'dr\').classList.remove(\'s\')">\u00D7</button></div><div style="flex:1;overflow:auto">'+(cart.length?cart.map(function(c,i){var x=find(c.id);return '<div class="ci"><div class="t" style="background:linear-gradient(135deg,'+x.g[0]+','+x.g[1]+')">\uD83E\uDD7B</div><div class="f"><b>'+x.n+'</b><br>'+inr(x.p)+(c.a?' + fall/pico':'')+'<br><span class="q"><button onclick="cq('+i+',-1)">\u2212</button> '+c.q+' <button onclick="cq('+i+',1)">+</button></span></div><button class="ib" onclick="cq('+i+',-99)">\uD83D\uDDD1</button></div>'}).join(''):'<p>Your cart is empty.</p>')+'</div>'+(cart.length?'<div style="display:flex;gap:6px"><input class="f" id="cp" placeholder="Coupon code" value="'+coupon+'"><button class="btn o" style="height:38px;margin-top:4px" onclick="coupon=$(\'cp\').value.trim().toUpperCase();if(coupon!==CFG.coupon){toast(\'Invalid coupon\');coupon=\'\'}else toast(CFG.couponPct+\'% off applied\');openCart()">Apply</button></div><div class="row"><span>Subtotal</span><span>'+inr(T.s)+'</span></div>'+(T.d?'<div class="row"><span>Discount</span><span>\u2212'+inr(T.d)+'</span></div>':'')+'<div class="row"><span>Shipping</span><span>'+(T.sh?inr(T.sh):'Free')+'</span></div><div class="row"><b>Total</b><b>'+inr(T.t)+'</b></div><button class="btn" onclick="checkout()">Checkout</button>':'')}
+function cq(i,d){cart[i].q+=d;if(cart[i].q<1)cart.splice(i,1);save();badges();openCart()}
+function checkout(){var T=totals();$('dr').classList.remove('s');
+openM('<h3>Checkout</h3><input class="f" id="cn" placeholder="Full name"><input class="f" id="cm" placeholder="Mobile number"><input class="f" id="ca" placeholder="Address"><input class="f" id="cz" placeholder="PIN code"><select class="f"><option>UPI</option><option>Credit / Debit Card</option><option>Net Banking</option><option>Cash on Delivery</option></select><div class="row"><b>Total payable</b><b>'+inr(T.t)+'</b></div><button class="btn" style="width:100%" onclick="place()">Place Order</button>')}
+function place(){var n=$('cn').value.trim(),m=$('cm').value.trim(),a=$('ca').value.trim(),z=$('cz').value.trim();
+if(!n||!/^\d{10}$/.test(m)||!a||!/^\d{6}$/.test(z)){toast('Enter name, 10-digit mobile, address & 6-digit PIN');return}
+var id='RJ'+Math.floor(100000+Math.random()*900000);cart=[];coupon='';save();badges();
+openM('<h3>\uD83C\uDF89 Order placed!</h3><p>Thank you, '+n+'. Your order <b>'+id+'</b> is confirmed. (Demo store \u2014 no real payment taken.)</p>')}
+/* ---- home + setup ---- */
+function renderHome(){$('bestGrid').innerHTML=P.slice().sort(function(a,b){return b.r-a.r}).slice(0,4).map(card).join('')}
+function init(){
+$('topbar').innerHTML='Free shipping above '+inr(CFG.freeShipAbove)+' \u00B7 Use code <b>'+CFG.coupon+'</b> for '+CFG.couponPct+'% off \u00B7 Cash on Delivery available';
+$('fsText').textContent='Above '+inr(CFG.freeShipAbove);
+$('nav').innerHTML=PAGES.map(function(p){return '<a href="#/'+p[0]+'" data-p="'+p[0]+'">'+p[1]+'</a>'}).join('');
+$('typeTiles').innerHTML=TYPES.map(function(t){return '<button class="tile" style="background:linear-gradient(135deg,'+t[1]+','+t[2]+')" onclick="shopBy(\'type\',\''+t[0]+'\')">'+t[0]+'<small>'+P.filter(function(x){return x.t===t[0]}).length+' sarees</small></button>'}).join('');
+$('colTiles').innerHTML=OCC.map(function(t){return '<button class="tile" style="background:linear-gradient(135deg,'+t[1]+','+t[2]+')" onclick="shopBy(\'col\',\''+t[0]+'\')">'+t[0]+'</button>'}).join('');
+$('ctInfo').innerHTML=CFG.address+'<br>'+CFG.email+'<br>'+CFG.phone;$('fb').textContent=CFG.brand;$('fa').innerHTML=CFG.address+'<br>'+CFG.email+'<br>'+CFG.phone;
+renderHome();badges();route()}
+init();
+</script></body></html>
